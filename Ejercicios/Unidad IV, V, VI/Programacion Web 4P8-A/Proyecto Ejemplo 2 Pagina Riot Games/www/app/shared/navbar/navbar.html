@@ -1,0 +1,56 @@
+<!--<nav>
+    <li ui-sref-active="active"><a ui-sref="navbar.home">Home</a></li>
+    <li><a href="">Campeones</a></li>
+    <li ui-sref-active="active"><a ui-sref="navbar.top-summoner">Invocadores</a></li>
+    <li><a href="">Estadisticas</a></li>
+    <li><input type="text" class="input_inline"><i class="fa fa-search" aria-hidden="true"></i></li>
+    
+</nav>-->
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+            <li ui-sref-active="active"><a href="#" ui-sref="navbar.home">Campeones</a></li>
+            <li ui-sref-active="active"><a href="#" ui-sref="navbar.summoner({name: $ctrl.currentUser.nameSummoner||'abcluis'})">Invocadores</a></li>
+            <li ui-sref-active="active"><a href="#" ui-sref="navbar.top-summoner">Top list</a></li>
+        </ul>e
+
+        <ul class="nav navbar-nav navbar-right">
+            <li ng-show="!$ctrl.currentUser">
+                <form class="navbar-form">
+                    <button ng-click="$ctrl.open()" class="btn btn-default">Iniciar sesion</button>
+                </form>
+            </li>
+            <li ng-show="$ctrl.currentUser" ><img style="height: 40px;" ng-src="{{$ctrl.currentUser.image}}" alt="" class="image-rounded"></li>
+            <li ng-show="$ctrl.currentUser"><a>{{$ctrl.currentUser.username}}</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-lg fa-cog" aria-hidden="true"></i> <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li><a href="" ng-click="$ctrl.logOut()">Cerrar sesion</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- /.navbar-collapse -->
+</nav>
+
+<div ng-show="showSpinner" style="margin-top: 50px; text-align: center">
+    <img src="../assets/img/loading.gif" alt="">
+</div>
+
+<div ui-view ng-show="!showSpinner"></div>

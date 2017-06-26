@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url("../public/img/fondo.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+#bands {
+  list-style: inside circle;
+  font-size: 20px;
+  width: 500px;
+  margin: auto;
+  padding: 0;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+}
+#bands li {
+
+  margin-bottom: 5px;
+  border-bottom: 1px solid #efefef;
+  padding: 20px;
+}
+#bands li:last-child {
+  border-bottom: 0;
+}
+a {
+  color: #ffc600;
+  text-decoration: none;
+}

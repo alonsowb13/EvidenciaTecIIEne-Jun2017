@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Array reduce() Method</title>
+  <link rel="stylesheet" href="../Definitions/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Array reduce() Method</h1>
+  </header>
+  <section>
+    <article>
+      <p>The reduce() method reduces the array to a single value.</p>
+      <p>The reduce() method executes a provided function for each value of the array (from left-to-right).</p>
+      <p>The return value of the function is stored in an accumulator (result/total).</p>
+      <p><b>Note:</b> reduce() does not execute the function for array elements without values.</p>
+      <h3>Example:</h3>
+      <p>var numbers = [65, 44, 12, 4];<br>
+      function getSum(total, num) { <br>
+      return total + num; <br>
+      } <br>
+      function myFunction(item) { <br>
+      document.getElementById("demo").innerHTML = numbers.reduce(getSum);<br>
+      }
+      <h3>The result will be:</h3>
+      <p>125</p>
+    </article>
+  </section>
+</body>
+</html>

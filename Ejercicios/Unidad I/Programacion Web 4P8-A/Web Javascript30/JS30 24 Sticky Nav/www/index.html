@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS30 13 Slide</title>
+    <style>
+        body{
+            font-family: calibri light;
+            font-size: 18px;
+            background: #546E7A;
+        }
+        img.float-left{
+            float: left;
+        }
+        img.float-right{
+            float: right;
+        }
+        .slide-in {
+          opacity:0;
+          transition:all .8s;
+        }
+        .float-left.slide-in {
+          transform:translateX(-30%) scale(0.95) rotate(15deg);
+       
+        }
+        .float-right.slide-in {
+          transform:translateX(30%) scale(0.95) rotate(15deg);
+        }
+        .slide-in.active {
+          opacity:1;
+          transform:translateX(0%) scale(1);
+        }     
+        .container{
+            border-radius: 3px;
+            background: white;
+            padding: 16px 16px;
+            width: 800px;
+            margin: 50px auto;
+        }
+        header {
+            text-align: center;
+            height:50vh;
+            background:url(public/image/fondo.jpg) center no-repeat;
+            background-size:cover;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+        }
+        nav {
+          background:black;
+          top:0;
+          width: 100%;
+          transition:all 0.5s;
+          position: relative;
+          z-index: 1;
+        }
+
+        body.fixed-nav nav {
+          position: fixed;
+          box-shadow:0 5px 0 rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+          margin: 0;
+          padding:0;
+          list-style: none;
+          display:flex;
+        }
+
+        nav li {
+          flex:1;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        li.logo {
+          max-width:0;
+          overflow: hidden;
+          background: white;
+          transition: all 0.5s;
+          font-weight: 600;
+          font-size: 30px;
+        }
+
+        li.logo a {
+          color:black;
+        }
+
+        .fixed-nav li.logo {
+          max-width:500px;
+        }
+
+        nav a {
+          text-decoration: none;
+          padding:20px;
+          display: inline-block;
+          color:white;
+          transition:all 0.2s;
+          text-transform: uppercase;
+        }
+        .logo_img{
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+   
+   <header>
+    <h1>A story about getting lost.</h1>
+  </header>
+
+  <nav id="main">
+    <ul>
+      <li class="logo"><a href="#"><img src="public/image/logo.png" alt="" class="logo_img"></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Images</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">Maps</a></li>
+    </ul>
+  </nav>
+   
+    <div class="container">
+       <h1>Historia de bioshock</h1>
+       <h3>"La mente del sujeto luchará desesperadamente para crear recuerdos donde no los hay…" Barreras al viaje transdimensional, R. Lutece, 1889. </h3>
+        <p>Esta frase que viene en la carátula alternativa del juego guarda uno de los secretos del juego, y te la ponen ahí bien cerquita para que te quedes totalmente sorprendido al haber tenido la clave del asunto delante de tus narices. Pero comencemos por el autor de la frase, que no corresponde a ninguna figura real, sino a uno de los personajes del juego: Rosalind Lutece (el apellido viene de Lutèce, Lutecia, como se conocía a París en la antigüedad y donde quieren ir siempre nuestros protagonistas para escapar), la científica que descubre la tecnología que hace a Columbia flotar en el aire así como el viaje transdimensional, que permite abrir desgarros para llegar a otros mundos. El hecho de que la firma en esa frase contenga sólo la inicial del nombre no es casual, ya que también podría pertenecer a su "hermano" Robert Lutece. Pero ya llegaremos a esa parte. Podemos afirmar que la frase pertenece a la versión femenina de Lutece pues la obra a la que se refiere, "Barreras al viaje transdimensional" aparece en el juego al igual que "Los Principios de la Mecánica Cuántica". </p>
+        <img src="public/image/image2.jpg" alt="" class="float-left slide-in">
+        <p>¿Por qué hemos comenzado con la extraña pareja que aparece en el juego? Porque ellos son el germen de la historia. Sin los descubrimientos de Lutece sobre el viaje transdimensional no existiría Columbia ni la historia que se nos cuenta en Bioshock Infinite (aunque tras el final, lo cierto es que tampoco existe nada de esto). Así pues, para que el lector entienda mejor el cierre del juego, intentaremos seguir un orden cronológico en la medida que eso sea posible.</p>
+
+        <p>Roselind Lutece inventa el portal dimensional y da pie a todo lo que sucederá a continuación. Por otro lado, tenemos a un Booker DeWitt, nuestro protagonista; un hombre de 37 años del cual destacaremos dos hechos importantes en su carrera. Uno: que pertenece a la Agencia Nacional de Detectives Pinkerton, es decir, es un detective privado. Dos: luchó en la Masacre de Wounded Knee, en Dakota del Sur, una de las últimas batallas y de las más sangrientas que se recuerdan entre los indios Iakota y los Estados Unidos. Llamarle batalla sería demasiado, la verdad, ya que fue un fusilamiento en toda regla gracias a la invención de la ametralladora por un tal Gatling. Tras la horripilante masacre, donde Booker es conocido por su crueldad, nuestro "héroe" se encuentra totalmente devastado por las atrocidades que ha cometido. En un momento del juego, uno de los personajes al que nos enfrentaremos, Cornelius Slate, nos lo recuerda incluso llamándonos el Indio de Wounded Knee, por nuestra especial crueldad y habilidad para la destrucción. Tras la batalla, Booker, con un enorme pesar, se encuentra con un sacerdote que le invita a lavar sus pecados mediante el bautizo cristiano, una forma de absolución que podría hacer olvidar a Booker todo el sufrimiento que carga consigo… </p>
+        <img src="public/image/image1.jpg" alt="" class="float-right slide-in">
+
+        <p>
+        Este bautizo es el momento clave de la historia y el que Levine y su equipo de guionistas utiliza para crear un crack en el continuo espacio-tiempo para partir la historia en fragmentos como si de un espejo se tratara (más adelante comentaremos todas las lagunas que podrían derivar de esta decisión). 
+        </p>
+
+        <p>
+        Como diría Punset, para explicar esta situación, tenemos que dar una vuelta por el fascinante mundo de la mecánica cuántica. A grandes rasgos y simplificando las cosas (aun así, prestad atencion), digamos que la física cuántica estudia el comportamiento de partículas elementales y sus estados alterados. Dos puntos importantes de esta teoría serían: 1) el punto de vista del observador influye en lo observado y por lo tanto un objeto puede variar según el punto de vista del sujeto que lo observa y que da lugar al Principio de Incertidumbre; y 2) el espacio y el tiempo no delimitan la alteración de una partícula y, por lo tanto, de un objeto. Por ejemplo, si alteramos un elemento de un átomo, cambiando la dirección de su espín, la partícula subatómica correspondiente a ese elemento se invierte. Y la teoría dice que si separamos esta partícula de su correspondiente a cualquier distancia que os podáis imaginar (como si la ponemos al otro lado del globo terrestre) y volvemos a alterar su espín, su partícula correspondiente seguirá alterándose igual. ¿Resumen? La distancia no existe y el tiempo es relativo. Esta teoría es precisamente interesante porque podría esquivar la imposibilidad de superar la velocidad de la luz. ¿Aplicaciones prácticas molonas? Ordenadores cuánticos. Velocidad infinita. ¿Cuál usa Bioshock Infinite? La de las realidades paralelas, los multiversos, diferentes planos de existencia. 
+
+        </p>
+        <p>
+
+        ¿Ha sido duro? Bueno, ya pasó. Pero era importante para comprender, digamos, "científicamente", lo que sucede en el bautismo de Booker. En una realidad, Booker decide no bautizarse tras la masacre de Wounded Knee, y sigue siendo Booker, con sus penas y sentimientos de culpa. Poco a poco se ve arrastrado a la bebida y el juego, lo que le genera deudas enormes, es expulsado de la Agencia Pinkerton, todo para terminar con un trágico suceso, la muerte de su mujer mientras da a luz a su hija Anna. Anna DeWitt. Acosado por las deudas, Booker recibe la visita inesperada de un hombre (Robert Lutece) con una proposición de un tal Comstock, que pagará todas sus deudas si Booker entrega a cambio a su hija recién nacida: Anna DeWitt. Booker acepta, pero se arrepiente en el último momento e intenta rescatar a su hija de las manos de un joven Comstock, que con la ayuda de los "hermanos" Lutece, está llevando a la pequeña Anna a través de un desgarre dimensional. Booker no consigue su objetivo y Comstock y los Lutece atraviesan el portal con el bebé. El portal se cierra demasiado pronto, cortando el dedo meñique del bebé y dejando a Booker al otro lado. 
+        </p>
+        <img src="public/image/image3.jpg" alt="" class="float-left slide-in">
+
+        <p>
+
+        Rebobinemos un poco, hasta el bautizo. En otra realidad, tal y como dicta la teoría cuántica, Booker acepta el bautizo tras la masacre de Wounded Knee. Al bautizarse y olvidar sus pecados, adopta el nombre de Zachary Hale Comstock, figura que dominará los cielos con su ciudad de Columbia gracias a la tecnología de Roselind Lutece. Aquí diríamos que el nombre podría estar inspirado en Anthony Comstock, un político americano que luchó en la Guerra Civil americana y fundador de la Sociedad por la Supresión del Vicio, pero probablemente Levine nos diría que simplemente era el nombre de un amigo de su infancia, como en el caso del primer Bioshock. 
+        </p>
+        <p>
+
+        Hasta aquí, todos los datos están sobre la mesa muy claros, pero a partir de este punto hay que comenzar a conjeturar un poco, ya que el juego no es tan claro al comprimir toda esta información en un final de 15 minutos, con el único apoyo de los voxófonos para intentar conectar los cabos sueltos. Los retales de información acerca de los primeros años de Comstock se dan en las primeras horas del juego. Si investigamos, sabremos que fue el líder de un partido ultra-nacionalista llamado Los Fundadores, que en algún momento de la historia lograría una gran atencion por parte del pueblo. Esto, unido a que en algún momento de la historia Comstock conoce a Roselind Lutece y sus experimentos, formarían la actual Columbia. Una ciudad por encima del resto de ciudades y sin la aprobación de Washington, creada y fundada con sus propias reglas y sin tener que vivir con las leyes del Estados Unidos terrenal (lo que ellos llaman "La Sodoma de Abajo", un lugar de depravación según su estilo de vida). 
+        </p>
+        <p>
+
+
+        Este punto es interesante, porque la ideología de Comstock y de Columbia alaba a los padres fundadores de la nación, aquellos que lideraron la revolución americana, libre del yugo del Imperio Británico. Aquí aprovecharemos para meter unas cuantas curiosidades que se dieron durante el desarrollo de Infinite. Mientras que los padres fundadores, George Washington, Thomas Jefferson y Benjamin Franklin aparecen en el juego, no hay prácticamente ninguna referencia a Lincoln, puesto que este presidente de EE.UU. simboliza la abolición de la esclavitud y la liberación del pueblo negro, absolutamente en contra de las ideas racistas de Comstock. Ahora bien, en una parte del juego visitamos una realidad en el que somos el mártir de la revolución esclavista, de los Vox Populi liderados por Daisy Fitzroy y donde podrían haber utilizado a esta figura histórica. Sin embargo, los únicos retazos que encontramos del presidente americanos es en forma de autómata mecánico creado por los Vox Populi.
+        </p>
+        <p>
+
+        Pero aún hay más. Los que hayan seguido el lanzamiento del juego y visto todos sus trailers desde su anuncio, notarán que muchas de esas largas demos presentadas en el E3 no han aparecido en el juego. Un espectacular encuentro con SongBird, por ejemplo; un momento donde Elisabeth atiende a un caballo muerto; o un lugar que visitan donde hay marionetas y máscaras de Washington y sí, Lincoln. Puede ser que no hayamos visto esta escena en nuestra primera partida, pero nos atreveríamos a decir que no aparece, ya que termina con otro encuentro con SongBird y forma parte de la historia principal. Puede ser casualidad o algo muy conveniente, pero de nuevo, estos trailers que nunca llegan a aparecer en la versión final del juego, son "realidades paralelas" a la propia historia del disco final y el círculo se completa una vez más. Seguimos con la historia de Comstock. Durante la fundación de Columbia, se alía con Roselind Lutiece y con Jeremiah Fink, creador del SkyHook, los vigorizadores y de SongBird. Aquí es donde viene una de los puntos críticos para entender Infinite, ya que el juego no es tan claro como el Bioshock original, y requiere encontrar una abundante cantidad de voxófonos para entender aspectos clave de la trama. De otra forma puedes pasar por la partida quejándote de la poca profunidad que tiene la historia de los vigorizadores o SongBird, por ejemplo.
+        </p>
+        <img src="public/image/image4.jpg" alt="" class="float-right slide-in">
+        <p>
+
+        Según se explica en estos comentarios en audio, gracias al estudio por parte de Lutece de los desgarros dimensionales, el partido de Los Fundadores fue capaz de dotar a Columbia de inventos increíbles. Probablemente la propia Lutece nunca llegó a inventar el sistema que hace flotar a la ciudad, sino que "tomó prestado" el mecanismo de otra realidad. De la misma forma, Fink descubre y experimenta con los vigorizadores en base a los descubrimientos de Rapture. Él nunca los imaginó, sino que se apoderó de la idea de los plásmidos y la llevó a Columbia. ¿Conclusión? Los vigorizadores son lo mismo que los plásmidos, provienen de la misma babosa parásita submarina, aunque pueden tener variaciones para conseguir nuevos poderes. Y probablemente las sales y el ADAM/EVE sean exactamente lo mismo.
+        </p>
+        <p>
+
+        Gracias a la experimentación de los viajes transdimensionales, Comstock logra todas estas cosas increíbles, pero a su vez pierde una: la capacidad de tener descendencia. Tanto viaje transdimensional parece haberle dejado estéril y, por lo tanto, no es capaz de procrear. Columbia es su legado y el Profeta no quiere dejárselo a nadie que no sea de su propia línea de sangre, ni siquiera a nadie en adopción, por lo que ve una realidad donde encuentra la solución a sus problemas: la realidad donde se encuentra su otro yo: Booker DeWitt sin haber pasado por el bautismo y haberse convertido en Comstock. Un paria, pensaría él, y la manera perfecta de conseguir su semilla perdida.
+        </p>
+        <p>
+
+        Aquí merece una mención especial Lady Comstock. Como hemos dicho en la historia de Booker, este tenía una mujer que muere al dar a luz a Anna DeWitt. ¿Podría ser ella la misma Lady Comstock, cuyo futuro también se hubiera visto alterado por la decisión de Booker al bautizarse? De ser así, en el fondo, Elisabeth sería su hija, y a la vez no, puesto que su verdadera madre habría sido una versión diferente de ella misma. Algo que ella no puede soportar, pero Comstock sí, y que le cuesta la vida. Eso sí, todo lo que ocurre en el juego con su versión "fantasmal" que invoca muertos vivientes es un poco rocambolesca y difícil de integrar en el núcleo duro de la trama, así que tenemos que mirar hacia otro lado hasta que logremos entenderlo completamente.
+        </p>
+        <p>
+
+        La decisión está hecha: Comstock, con la ayuda de Roselind Lutece, encuentra a un Booker roto por la pena dispuesto a dar a su hija a cambio de saldar sus deudas. Aquí se mezclan algunas dudas que todavía no tenemos aclaradas del todo, pero si no vamos mal encaminados, Roselind Lutece contacta con su "otro yo" de otra realidad, es decir, Robert Lutece, que en la dimensión alternativa es hombre en vez de mujer (ella misma le dice a él: "la única diferencia entre tú y yo es un cromosoma"), y que será el que contacte con Booker para proponerle el trato: "Tráenos a la chica y saldarás tu deuda". Volvemos de nuevo a Booker.La culpa le hace grabarse las iniciales AD, Anna DeWitt, a modo de penitencia antes de ir al rescate de su hija. Curiosa la relación entre los nombres de los protagonistas Anna DeWitt (AD) y Booker DeWitt, que algunos han relacionado con Big Daddy (BD). En cualquier caso, Comstock toma buena nota de la marca de Booker, y la utiliza para avisar de la llegada del Falso Pastor. "Por su marca le reconocerás" y todo eso.
+        </p>
+        <p>
+
+        El juego comienza exactamente en el momento en que vuelve a su apartamento, tras no poder rescatar a su hija Anna. Los Lutiece, traicionados también por Comstock para no revelar el secreto de Elisabeth, deciden tomar cartas en el asunto, sobre todo de la manos de su versión masculina, Robert Lutece, que parece siempre más arrepentido que Roselind. Aunque ellos se rían de la marca en la mano de Booker, ellos también tienen su propia penitencia. Al volver a buscar a Booker, se lo encuentran tirado en el suelo, sin poder aceptar la tragedia que acaba de suceder. Recordemos que a las tragedias pasadas se le suma una nueva y su mente, literalmente, se rompe en pedazos. Los Lutiece crean un portal de su apartamento hasta el Océano Atlántico, en el faro que lleva a la ciudad de Columbia (que algunos afirman se encuentra cerca del estado de Maine). Y ese espacio en blanco es al que se refiere la frase con la que hemos comenzado nuestra explicación: "La mente del sujeto luchará desesperadamente para crear recuerdos donde no los hay…"
+        </p>
+        <p>
+
+        Booker asocia la famosa frase "Tráenos a la chica y saldarás tu deuda" con una nueva tarea que cumplir. Un encargo realizado por los Lutece, y ellos aprovechan la circunstancia para mandarlo en busca de Elisabeth. El resto, como se dice, es historia; lo que se cuenta a partir del momento en que estás en una barca con los Lutiece, algo en lo que, como el protagonista, no vuelves a pensar hasta el final del juego. Curioso es también el detalle de las muertes del protagonista, donde Levine aprovecha la oportunidad para crear de nuevo un "metajuego". Si en el primer Bioshock, Levine se ríe de lo obediente que es el jugador ante cualquier directriz que se le da (¿quieres?), aquí vemos a Booker abrir la puerta de su despacho cada vez que muere y Elisabeth no nos acompaña. ¿Un mero recurso artístico? No lo creemos. Más bien, un nuevo Booker de otra realidad que vuelve a Columbia a repetir el proceso. El viejo Booker muere y esa realidad se convierte en otra. De esa manera, tendría sentido la primera escena donde se presentan formalmente los "hermanos" Lutiece, donde se divierten con nosotros jugando al cara o cruz, y donde cien veces hemos sacado cara. 
+        </p>
+        <p>
+
+        Pero esto no acaba aquí. Aún hay muchas preguntas que resolver. Intentaremos englobarlas todas en una: ¿Cómo leches consigue Anna DeWitt/Elisabeth sus poderes? Lo cierto es que no hemos encontrado ningún indicio irrefutable que diga claramente lo que sucede, pero sí podemos conjeturar en base a lo que se nos cuenta en el juego. Comstock es llamado el Profeta de forma errónea. Su cambio de Líder del Partido a Profeta viene dado porque en algún momento de su vida vaticina el futuro, algo de lo que probablemente habría dado ya pruebas a los ciudadanos de Columbia al crear la ciudad, los vigorizadores y el resto de artilugios. En el fondo, lo que Comstock veía era simplemente ventanas a otros mundos, otras realidades… Pero no podía ver el futuro de la suya. En una de esas ventanas, vio a su hija llevando el fuego a las Montañas de los hombres (los rascacielos de Nueva York). Y esa fue la misión que quería para su heredera Elisabeth cuando llegara el momento. Para guardar el secreto de cómo nació Elisabeth y prepararla para su futuro, la mantuvo encerrada en lo alto de la estatua, como si de una princesa de cuento se tratara custodiada por un dragón (SongBird). 
+        </p>
+        <p>
+
+        A partir del rapto del bebé, este empieza a manifestar poderes transdimensionales. Según nos cuenta la propia Elisabeth, cuando era pequeña eran aún más fuertes. En una de las primeras demostraciones, de hecho, vemos a Elisabeth crear una realidad en el París de 1983, la primera clave hacia el multiverso y las realidades alternativas, ya que, a modo de guiño, vemos un cine donde se proyecta en francés "La venganza del Jedi". ¿Pero cómo? ¿No se llamaba El Retorno del Jedi? Claro que sí, pero el bueno de George Lucas bautizó a la tercera entrega así en un primer momento, hasta darse cuenta de lo que los propios fans ya sabían: que un Jedi nunca utilizaría la venganza.
+        </p>
+        <p>
+
+        La única suposición que tenemos de cómo Elizabeth consigue sus poderes es que al atravesar un portal con tan temprana edad (recordemos, cuando pierde su dedo meñique), algo se pudo alterar en su código genético, puesto que las personas adultas que atraviesan portales no poseen dicha capacidad. Otro punto a entender es que Comstock, a través de máquinas creadas por Lutiece, crea el sifón, con el cual va absorbiendo los poderes de Elisabeth poco a poco y es la razón por la que a medida que va creciendo sus facultades se reducen. Pero, ¿por qué Comstock pretende absorber sus poderes si en su "visión" Elisabeth arrasa el mundo? ¿No basta sólo con educarla? Esperamos conseguir más respuestas a ello… 
+        </p>
+        <p>
+
+        Otra pregunta que suele asaltar al jugador es acerca de SongBird. ¿Qué es exactamente? Lo cierto es que se sabe muy poco sobre él. Su forma y nombre simula un pájaro cantor, aunque también en su forma a un águila que simboliza la economía de Columbia y la nueva América. En uno de los voxófonos, aprendemos que la creación de SongBird parte de las investigaciones de Fink, en los estudios que tomó prestados de un desgarro abierto a otro mundo de ensueño. Ese mundo de ensueño es Rapture, del que robó prácticamente todas las invenciones de la ciudad de Ryan, como los vigorizadores, así que posiblemente SongBird parta del mismo patrón que el de un Big Daddy. Su aspecto guarda semejanzas comunes, aunque tiene una diferencia radical con él: su composición no tolera el agua, y es por ello por lo que SongBird deja de perseguirlos tras la huída de la estatua y muere al verse atrapado en las profundidades submarinas de Rapture tras la cristalera. Lamentablemente, poco más hemos conseguido dilucidar acerca de uno de los elementos más interesantes del universo Infinite.
+        </p>
+        <p>
+
+        Hablando de Rapture, la ciudad submarina hace una espectacular aparición en el final del juego, que aunque cumple su función más a modo de "fan service", ya hemos comentado su importancia para los inventos de Columbia. Poco más tiene que aportar salvo el guiño, pero sí simboliza el claro mensaje de Bioshock Infinite: "Podemos hacer tantos mundos distintos como realidades pueden existir". 
+        </p>
+        <p>
+
+        Hemos cubierto muchos de los puntos que más incógnitas han creado alrededor del final de Bioshock Infinite. Lo cierto es que hay muchos más y esperamos que aportéis vuestros comentarios, para que entre todos podamos descubrirlos. De igual forma, podemos tener algún dato equivocado o parcialmente incorrecto y estaría genial que nos lo indicarais para sacar el máximo partido al artículo. Aun ahondando tanto en el significado de este cierre, Levine se enfrentará a las mismas pesquisas de los usuarios que cualquier autor de una historia sobre viajes en el tiempo se enfrenta: porque en todo lo que creas al formar unas reglas se logra dando otras por ciertas, para evitar la paradoja, pero, ¡ay amigo!, eso es imposible…
+        </p>
+
+        <p>
+
+        Por ejemplo, el epílogo del juego, el último tema a tratar. En el juego se da a entender que, para que ningún Comstock aparezca del bautizo de Wounded Knee, todos ellos deben morir antes de que nazca. Aquí hay dos interpretaciones: o bien todos los Booker y Comstock mueren, o bien solo se ahogan las realidades de Comstock. Cuando Anna/Elisabeth nos ahoga, poco a poco vemos cómo van desapareciendo cada una de las versiones alternativas de ellas tras cada nota de piano, y en el momento en que va a desaparecer la última… corte a negro. ¿Desaparece? ¿No? Es la misma conclusión que la peonza de Origen (Inception)… Aun así, cabe esperar que al menos una versión de la realidad acaba en final feliz, con Booker reencontrándose con su hija en la cuna y todo un futuro juntos por vivir. 
+        </p>
+        <p>
+
+        En cualquier caso, al borrar a Comstock de todas las realidades, todo lo que hemos hecho en el juego queda, por consiguiente, eliminado de la historia. De hecho, muchos especulan que una de esas paradojas se crea en el instante en que Booker es ahogado. No podría ser ahogado por su propia hija, puesto que si Comstock es eliminado, nada de esto habría ocurrido, ni el ahogamiento mismo. Ahí es donde se crea el problemático bucle de los saltos transdimensionales…
+        </p>
+    </div>
+    <script src="js/slide.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+h1{
+	text-align: center;
+	display:inline-block;
+	background-color: #65CD99;
+	width:100%;
+}
+
+#menu{
+	text-align: left;
+}
+
+section{
+	position:absolute;
+	border-left: 1px solid #3CA0ED;
+	border-width: 3px;
+	left:135px;
+	top:115px;
+}
+.post{
+	
+	border: blue 5px dotted;
+	left:1180px;
+	position: absolute;
+	top:115px;
+	text-align: right;
+
+}
+
+footer{
+	position: relative;
+	text-align: center; 
+	top:350px
+}

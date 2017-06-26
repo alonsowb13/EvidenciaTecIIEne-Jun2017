@@ -1,0 +1,103 @@
+<<<<<<< HEAD
+html{
+    background-color: firebrick;
+    
+}
+.circle-clock{
+    background-color: black;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin: 50px auto;
+    position: relative;
+    background: url(../public/img/clock.gif);
+    background-size: contain;
+    padding: 1.5rem;
+}
+.header{
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    margin: 0 auto;
+}
+
+.clock-face{
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand{
+    width: 50%;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all ease 0.05s;
+    transition-timing-function: cubic-bezier(.07, 1.47, .76, 1.47)
+}
+
+.second-hand{
+    height: 2px;
+}
+
+.hour-hand{
+    height: 4px;
+}
+
+
+
+=======
+html{
+    background-color: firebrick;
+    
+}
+.circle-clock{
+    background-color: black;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    margin: 50px auto;
+    position: relative;
+    background: url(../public/img/clock.gif);
+    background-size: contain;
+    padding: 1.5rem;
+}
+.header{
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    margin: 0 auto;
+}
+
+.clock-face{
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand{
+    width: 50%;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all ease 0.05s;
+    transition-timing-function: cubic-bezier(.07, 1.47, .76, 1.47)
+}
+
+.second-hand{
+    height: 2px;
+}
+
+.hour-hand{
+    height: 4px;
+}
+
+
+
+>>>>>>> e37c3d33ff3f6a6dff200d54fa43c169401c664a

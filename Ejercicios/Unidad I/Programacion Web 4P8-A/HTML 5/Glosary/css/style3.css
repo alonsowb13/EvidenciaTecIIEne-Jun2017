@@ -1,0 +1,53 @@
+@font-face{
+  font-family: 'ComR';
+  src: url('../fonts/Comfortaa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Dragon';
+  src: url('../fonts/Dragon is coming.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Sans';
+  src: url('../fonts/Sanseriffic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header{
+  text-align: center;
+  color: white;
+}
+h1{
+  font-family: 'Sans';
+}
+h2, h3{
+  font-family: 'ComR';
+}
+
+img{
+  width: 200px;
+  height: 225px;
+}
+
+section{
+  text-align: center;
+  color: white;
+}
+
+article p{
+  font-size: 1.3em;
+  font-family: 'Sans';
+}
+
+#autor{
+  margin-top: 70px;
+  color: white;
+  float: right;
+  font-family: 'Sans';
+}

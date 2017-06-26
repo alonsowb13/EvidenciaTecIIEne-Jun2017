@@ -1,0 +1,56 @@
+ <div class="container" ng-controller="MovieController as view"> 
+        <div class="row">
+            <div class="col-lg-12">
+                <form class="form-inline" role="form">
+
+                    <div class="form-group">
+                        <label for="search"><strong>Buscar</strong>  Titulo</label>
+                        <input type="search"  id="search" name="name" placeholder="Buscar...." class="form-control" value="" title="" ng-model="view.search">
+                    </div>
+                    <label for="search">Ordenar</label>
+                    <select class="form-control" ng-model="view.sort">
+                        <option value="titulo">Titulo</option>
+                        <option value="director">Director</option>
+                        <option value="produccion">Produccion</option>
+                        
+                    </select>
+                </form>
+            </div>
+        </div>
+        <hr>
+        
+        <div  ng-repeat="movie in view.movies | orderBy:view.sort | filter:view.search">
+            <div class="row">
+
+                <div class="col-lg-2" >
+                    <div class="row">
+                      <a ui-sref="tab({id:movie.id - 1})">
+                      <img src="./public/img/{{movie.img}}" alt="" class="img-responsive" width="370" height="370">
+                      </a>
+                    </div> 
+                </div>
+                <div class="col-lg-10" >  
+                    <div class="row">
+                        <h5><strong>Titulo:</strong> {{movie.titulo}}</h5> 
+                        <p><strong>Director:</strong> {{movie.director}}</p>
+                        <p><strong>Produccion:</strong> {{movie.produccion}}</p> 
+                        <p><strong>Sinopsis:</strong> {{movie.sinopsis}}</p>
+                        <a href="{{movie.trailer}}" target="_blank"><button type="button" class="btn btn-danger">Ver Tráiler <span class="glyphicon glyphicon-play-circle"></span></button></a>
+                        <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.9";
+                                fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-share-button" data-href="https://www.facebook.com/TusPeliculasEnVivo/" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Compartir</a></div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </div>

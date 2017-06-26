@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title >CURRICULUM VITAE</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script>
+function mostrar(enla) {
+  obj = document.getElementById('oculto');
+  obj.style.visibility = (obj.style.visibility == 'hidden') ? 'visible' : 'hidden';
+  enla.innerHTML = (enla.innerHTML == '-') ? 'DATA PERSONAL' : 'DATA PERSONAL';
+}
+</script>
+
+<script>
+function mostrar2(enla) {
+  obj = document.getElementById('oculto2');
+  obj.style.visibility = (obj.style.visibility == 'hidden') ? 'visible' : 'hidden';
+  enla.innerHTML = (enla.innerHTML == '-') ? 'EDUCATION' : 'EDUCATION';
+}
+</script>
+
+
+<script>
+function mostrar3(enla) {
+  obj = document.getElementById('oculto3');
+  obj.style.visibility = (obj.style.visibility == 'hidden') ? 'visible' : 'hidden';
+  enla.innerHTML = (enla.innerHTML == '-') ? 'ACTIVITIES' : 'ACTIVITIES';
+}
+</script>
+
+<script>
+function mostrar4(enla) {
+  obj = document.getElementById('oculto4');
+  obj.style.visibility = (obj.style.visibility == 'hidden') ? 'visible' : 'hidden';
+  enla.innerHTML = (enla.innerHTML == '-') ? 'LANGUAGE' : 'LANGUAGE';
+}
+</script>
+</head>
+<body>
+
+
+<table cellspacing="2" width="800" border="2" align="center">
+            <tr>
+           
+                <td>
+                   
+                <h1 align="center"> WELCOME CURRICULUM VITAE </h1>
+                    <div id="oculto" style="visibility:hidden" align="center">
+					
+ 						<h2 align="center">DATA PERSONAL</h2>
+
+						<p align="center" id="col1">Name: 	Moisés de los Reyes Martínez Méndez</p>									<p align="center" id="col1">Age: 20 years old</p>
+								<p align="center"  id="col1">Birthdate: February 12, 1996</p>
+								<p align="center" id="col1">Street: Mine of hueyapan</p>
+								<p align="center" id="col1">colony: Provenir  II</p>
+								<p align="center" id="col1">City:  Chihuahua</p>
+
+							
+								</div>
+ 								<div id="oculto2" style="visibility:hidden">
+					
+ 									<h2 align="center">EDUCATION</h2>
+
+								<p align="center" id="col1">Primary school:  Luís Donaldo Colosio Murrieta</p>
+								<p align="center" id="col1">Secondaryschool: #78 </p>
+								<p align="center" id="col1">Preparatory: conalep II</p>
+								<p align="center" id="col1">Current school: Technological institute of chihuahua II</p>
+
+								</div>
+								<div id="oculto3" style="visibility:hidden">
+					
+ 									<h2 align="center">ACTIVITIES</h2>
+
+								<p align="center" id="col1">Playing soccer</p>
+								<p align="center" id="col1">Running  </p>
+								<p align="center" id="col1">Playing excercise</p>
+								<p align="center" id="col1">Read</p>
+								<p align="center" id="col1">Playing excercise</p>
+								<p align="center" id="col1">Read</p>
+								
+
+
+								</div>
+								<div id="oculto4" style="visibility:hidden">
+					
+ 									<h2 align="center">LANGUAGE</h2>
+
+								<p align="center" id="col1">English</p>
+							
+								</div>
+	</th>
+
+			</div>
+                </td>
+                <td>
+			
+
+
+			<ul>
+
+	<li>	<a href="#" onclick="mostrar(this); return false">DATA PERSONAL</a><br>
+
+	<li>	 <a href="#" onclick="mostrar2(this); return false" >EDUCATION</a><br></li>
+	<li>	<a href="#" onclick="mostrar3(this); return false" >ACTIVITIES</a><br> </li>
+	<li>	<a href="#" onclick="mostrar4(this); return false" >LANGUAGE</a><br></li>
+
+</ul>
+
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BookStore">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container-fluid" ng-controller="BooksController as BookStore">
+	<h1></h1>
+	<form class="form-inline">
+	<label for="">Buscar</label>
+	<div class="form-group">
+		<label for="">Titulo:</label>
+		<input type="text">
+	</div>
+
+	<div class="form-group">
+		<label for="ordenar">Ordenar</label>
+		<select id="ordenar" class="form-control">
+			<option value="1">Titulo</option>
+			<option value="2">Editorial</option>
+		</select>
+	</div>
+	</form>
+	<h1>Libros</h1>
+	<ul>
+		<li class="list-group-item" ng-repeat="book in BookStore.books">
+	<div class="row">
+		<div class="col-md-6">
+			<img ng-src="{{book.image[0].full}}" alt="">	
+		</div>
+		<div class="col-md-6">
+			<h2><a href="libro1.html">{{book.titulo}}</a></h2>
+			<br>
+			<h3>{{book.autor}}</h3>
+			<p>{{book.descripcion}}</p>
+		</div>
+	</div>
+	</li>
+</ul>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/BookStore.js"></script>
+</body>
+</html>

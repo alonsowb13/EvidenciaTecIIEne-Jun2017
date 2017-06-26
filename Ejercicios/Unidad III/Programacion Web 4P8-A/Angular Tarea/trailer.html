@@ -1,0 +1,25 @@
+ <div class="container"> 
+        
+<div class="container tab-container" align = "center">
+    <div class="row panel-tab">
+        <div class="col-lg-12">
+            <div class="row">
+                <h1>{{$ctrl.movie.titulo}}</h1>
+                <img ng-src="./public/img/{{$ctrl.movie.img}}" alt="" class="img-responsive">
+                <p><strong>Director:</strong> {{$ctrl.movie.director}}</p>
+                <p><strong>Produccion:</strong>{{$ctrl.movie.produccion}}</p>
+
+                <p class="text-justify"><strong>Sinopsis: </strong>{{$ctrl.movie.sinopsis}}</p>
+                <br>
+                <p><strong>Trailer</strong> {{$ctrl.movie.trailer}}</p>
+                <iframe width="560" height="315" ng-src="{{$ctrl.movie.trailer}}" frameborder="0" allowfullscreen></iframe>
+                
+                <hr>
+                <a ui-sref="home"><i class="fa fa-arrow-left"></i>Volver</a> 
+            </div>
+        </div>
+    </div>
+    <hr>
+</div> 
+ 
+    </div>    

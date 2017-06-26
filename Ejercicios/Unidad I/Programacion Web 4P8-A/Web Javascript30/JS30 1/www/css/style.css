@@ -1,0 +1,91 @@
+<<<<<<< HEAD
+html {
+    background: url(../public/img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    color: white;
+    margin: 5px 20px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.keys{
+    margin-top: 7rem;
+}
+
+.key{
+    border: 2px black solid;
+    border-radius: 3px;
+    display: inline-block;
+    color: white;
+    width: 5rem;
+    padding: 10px 15px;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    transition: 0.07s ease all;
+    margin: 15px;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: #b28c0b;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.key kbd{
+    font-size: 40px;
+    display: block;
+}
+.key span{
+    color: #e01919;
+}
+
+=======
+html {
+    background: url(../public/img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    color: white;
+    margin: 5px 20px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.keys{
+    margin-top: 7rem;
+}
+
+.key{
+    border: 2px black solid;
+    border-radius: 3px;
+    display: inline-block;
+    color: white;
+    width: 5rem;
+    padding: 10px 15px;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    transition: 0.07s ease all;
+    margin: 15px;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: #b28c0b;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.key kbd{
+    font-size: 40px;
+    display: block;
+}
+.key span{
+    color: #e01919;
+}
+
+>>>>>>> e37c3d33ff3f6a6dff200d54fa43c169401c664a

@@ -1,0 +1,69 @@
+**Crear proyecto con el nombre WebProject
+meteor create WebProject
+
+**Borrar el autopublish
+
+meteor remove autopublish
+
+**Borrar insecure
+
+meteor remove insecure 
+
+**Checar el archivo packages dentro de la carpeta . meteor, en este se agregaron librerias
+#librerias del capitulo 2 
+
+kadira:flow-router
+
+kadira:blaze-layout
+
+#librerias del capitulo 2 agregar una por una, si no tarda una eternidad en cargarlos
+erasaur:meteor-lodash
+stolinski:stylus-multi
+fortawesome:fontawesome
+spiderable
+fastclick
+raix:handlebar-helpers
+aldeed:collection2
+aldeed:autoform
+accounts-ui
+accounts-password
+matb33:bootstrap-glyphicons
+msavin:jetsetter
+zimme:active-route
+gwendall:auth-client-callbacks
+
+
+
+se agrega una nueva libreria
+datariot:ganalytics
+
+
+
+en el video 11 para ver la lista le pone 
+localhoost:3000/recipe-book
+
+
+
+**Agregar libreria
+
+meteortoys:allthings
+
+
+**Cargar el archivo JSON en la consola con
+meteor --settings settings.json
+
+
+**Agregar libreria, esta es la vieja confiable
+
+meteor add check
+
+--Se debe checar codigo en el capitulo 20 no esta funcionando
+
+En el capitulo 24 se agrega la libreria reactive-var 
+
+--Se han terminado todos los capitulos
+
+
+**Agregar paquete
+
+meteor add session

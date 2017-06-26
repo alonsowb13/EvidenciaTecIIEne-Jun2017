@@ -1,0 +1,96 @@
+
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 400px;
+    border: 3px solid #00897b;
+    padding: 10px;
+}
+
+.left {
+    position: absolute;
+    left: 0px;
+    width: 400px;
+    border: 3px solid #00897b;
+    padding: 10px;
+}
+
+
+
+hr.moy{
+width: 1px;
+height: 500px;
+lighting-color: blue;
+ overflow: auto;
+}
+p{
+	font-variant-alternates: normal;
+}
+#fondo{
+
+	background-color:#80cbc4 ;
+}
+
+a:visited {
+    color: blue;
+}
+
+/* mouse over link */
+a:hover {
+    color: orange;
+}
+
+/* selected link */
+a:active {
+    color:brown;
+}
+h2.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.box {
+  background: #2db34a;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+.box:hover {
+  background: #ff7b29;
+}
+
+body {
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

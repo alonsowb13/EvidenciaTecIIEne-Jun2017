@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		div{
+			background-color: yellow;
+		}
+		header{
+			color: red;
+			background-color:green;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<article>
+			<p>We open at <time>10:00</time>every morning</p>
+			<p>I have a date on <time datetime="2017-02-14 20:00"></time></p>
+		</article>
+	</section>
+	<section>
+		<article>
+			<progress value="70" max="100"></progress>
+		</article>
+	</section>
+	<section>
+		<article>
+			<form oninput="x.value = parseInt(a.value) + parseInt(b.value)">0
+				<input type="range" id="a" value="50">100
+				+<input type="number" id="b" value="50">
+				=<output name="x" for="a b"></output>
+			</form>
+		</article>
+	</section>
+	<section>
+		<article>
+			<meter value="2" min="0" max="10">Tengo 2 piezas de 10</meter>
+			<meter value="0.6">60%</meter>
+			Tarea
+	<section>
+		<article>
+			<meter min="0" low="10" optimum="30" high="60" max="100" value="9"></meter>
+			<meter min="0" low="10" optimum="30" high="60" max="100" value="40"></meter>
+			<meter min="0" low="10" optimum="30" high="60" max="100" value="90"></meter>
+		</article>
+	</section>
+		</article>
+	</section>
+	<figure>
+		<img src="public/img/Logo-Apymsa.png" alt="Apymsa" width="304" height="228">
+	</figure>
+	<p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. <Mark>Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</Mark> Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<details open="open">
+		<summary>Mis platillos</summary>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</details>
+	<input list="canalesYoutube">
+		<datalist id="canalesYoutube">
+			<option value="Platzi"></option>
+			<option value="Codigo Facilito"></option>
+			<option value="Coursera"></option>
+			<option value="TreeHouse"></option>
+			<option value="CodeSchool"></option>
+		</datalist>
+		<select name="autos" id="autos">
+			<option value="Civic">civic</option>
+			<option value="Civic">civic</option>
+			<option value="Civic">civic</option>
+		</select>
+<!--input list="canalesdelasestrellas"></input>
+<audio controls="controls">
+	<source src="public/sounds/Dyro x Goja - Alive" type="audio/mp3">
+</audio>-->
+<audio controls="controls"  loop="loop">
+	<source src="public/sounds/Dyro x Goja - Alive.mp3" type="audio/mp3">
+</audio>
+
+<div id="head">
+<h1>Mi pagina</h1>
+</div>
+<!--div> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>-->
+<header>
+	<h1>mi pagina</h1>
+</header>
+<nav>
+	<a href="">Home</a>
+	<a href="">Contact</a>
+	<a href="">Morro </a>
+</nav>
+<section>
+<article>
+<aside>
+</aside>
+<canvas id="micanvas" width="300" height="400" style="border: solid;
+border-width:2px;" >
+</canvas>
+<!--<script>
+var canvas= document.getElementById("micanvas");
+var ctx=canvas.getContext("2d");
+//ctx.fillRect(0,0,200,20);
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
+-->
+<!--<script>
+var canvas= document.getElementById("micanvas");
+var ctx=canvas.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script>
+-->
+<!--<script>
+var canvas= document.getElementById("micanvas");
+traer la vaiable canvas del html
+var ctx=canvas.getContext("2d");
+ctx.font="30px Arial";
+ctx.strokeText("Hola perro",10,50);
+</script>
+-->
+<script >
+	var canvas=document.getElementById("micanvas");
+	var ctx = canvas.getContext("2d");
+	var grd= ctx.createLinearGradient(0,0,200,0);//color inicial a otro color (punto del gradiente,punto del gradiente,punto donde acava,punto donde acaba)(x1,y1,x2,y2)
+	grd.addColorStop(0,"red");  //0 en hexa es negroo, inicia en 0 y termina en rojo, empieza en la linea 0
+	grd.addColorStop(1,"white");// final o 100 de la figura que se genera
+	ctx.fillStyle=grd;// rellenarlo con grd
+	ctx.fillRect(10,10,150,80);// rellena un triangulo con esas medidas
+</script>
+</articule>
+</section>
+<section>
+<article>
+	<h1>blog</h1>
+	<img src="">
+	<p>lolo</p>
+</article>
+</section>
+</body>
+</html>

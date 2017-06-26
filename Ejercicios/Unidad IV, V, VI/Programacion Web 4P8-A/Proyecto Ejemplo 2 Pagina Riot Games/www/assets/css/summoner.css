@@ -1,0 +1,17 @@
+.jumbotron-summoner{
+    background: url("../img/summoner-jumbotron.jpg") center;
+}
+
+.winner-team{
+    background-color: #16a085;
+}
+.losser-team{
+    background-color: #c0392b;
+}
+
+summoner-detail{
+    background-clip: padding-box;
+    border:1px solid transparent;
+    color: white;
+    padding:16px;
+}

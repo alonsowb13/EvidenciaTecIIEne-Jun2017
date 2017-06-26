@@ -1,0 +1,44 @@
+@font-face{
+  font-family: 'ComB';
+  src: url('../fonts/Comfortaa-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'ComL';
+  src: url('../fonts/Comfortaa-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'ComR';
+  src: url('../fonts/Comfortaa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  margin-left: 40px;
+}
+
+p{
+  text-align: justify;
+  color: white;
+  font-family: 'ComR';
+}
+
+h1{
+  color: white;
+  font-family: 'ComB';
+}
+
+h3{
+  color: white;
+  font-family: 'ComR';
+}
+li{
+  color: white;
+  font-family: 'ComR';
+}

@@ -1,0 +1,38 @@
+.green{
+	height:70px;
+	background-color: green;
+	border: 2px black solid;
+}
+
+.red{
+	height: 400px;
+	background-color: red;
+	border: 2px black solid;
+}
+
+.pink{
+	height: 90px;
+	background-color: pink;
+	border: 2px black solid;
+
+}
+
+.orange{
+	height: 90px;
+	background-color: orange;
+	border: 2px black solid;
+
+}
+
+.blue{
+	height: 110px;
+	background-color: blue;
+	border: 2px black solid;
+}
+
+.black{
+		height: 110px;
+	
+	border: 2px black solid;
+
+}

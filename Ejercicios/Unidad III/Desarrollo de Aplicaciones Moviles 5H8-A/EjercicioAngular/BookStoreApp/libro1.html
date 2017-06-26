@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BookStore">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h2>{{book.titulo}}</h2>
+<img ng-src="{{book.image[1].full}}" alt="">
+<section ng-controller="FeaturesController as panel">
+	<ul class="nav nav-tabs">
+		<li ng-class="{active: panel.isSelected(1)}"><a href="" ng-click="panel.selectTab(1)">Titulo</a></li>
+		<li ng-class="{active: panel.isSelected(2)}"><a href="" ng-click="panel.selectTab(2)">Autor</a></li>
+		<li ng-class="{active: panel.isSelected(3)}"><a   href="" ng-click="panel.selectTab(3)">Editorial</a></li>
+		<li ng-class="{active: panel.isSelected(4)}"><a   href="" ng-click="panel.selectTab(3)">Descripcion</a></li>
+	</ul>
+	<div class="panel" ng-show="panel.isSelected(1)">
+		<h4>Titulo</h4>
+		<p>{{book.titulo}}</p>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(2)">
+		<h4>Autor</h4>
+		<p>{{book.autor}}</p>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(3)">
+		<h4>Editorial</h4>
+		<p>{{book.editorial}}</p>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(4)">
+		<h4>Descripcion</h4>
+		<p>{{book.descripcion}}</p>
+	</div>
+</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/BookStore.js"></script>
+	</body>
+</html>

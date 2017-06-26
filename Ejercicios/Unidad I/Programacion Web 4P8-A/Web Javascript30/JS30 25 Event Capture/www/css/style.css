@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+}
+
+html,body{
+    font-family: helvetica;
+    height: 100%;
+    
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow: hidden;
+}
+.container div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container div *{
+    opacity: 0;
+    transition: 0s ease all;
+}
+.container div h2{
+}
+.container div img{
+    width: 250px;
+    height: 250px;
+    border: solid 3px;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+
+.container div h5{
+}
+.maximize .show{
+    transition: 2s ease all;
+    opacity: 1;
+}
+.uno{
+    width: 50%;
+    background-color: cadetblue;
+    height: 50%;
+    transition: all ease 1s;
+}
+
+.dos{
+    background-color: firebrick;
+    height: 50%;
+    width: 50%;
+    transition: all ease 1s;
+}
+
+.tres{
+    width: 50%;
+    background-color: darkorange;
+    height: 50%;
+    transition: all ease 1s;
+}
+.cuatro{
+    width: 50%;
+    background-color: darkslategrey;
+    height: 50%;
+    transition: all ease 1s;
+
+}
+.maximize{
+    width: 100%;
+    height: 100%;
+    order: -1;
+}

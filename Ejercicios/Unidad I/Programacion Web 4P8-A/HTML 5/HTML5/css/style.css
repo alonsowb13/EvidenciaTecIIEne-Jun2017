@@ -1,0 +1,26 @@
+html, body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+section{
+  height: 100%;
+}
+article{
+  height: 33%;
+}
+meter {
+        width:100%;
+        height:100%;
+    }
+/*meter::-moz-meter-bar {
+       background: ;
+   }
+
+meter::-moz-meter-optimum-value {
+        background:#FFBF00;
+    }
+
+meter::-moz-meter-suboptimum-value {
+        background:#FFBF00;
+    }*/

@@ -1,0 +1,32 @@
+ ul{
+    background-color: #ff9300;
+    padding: 30px;
+}
+li {
+    background-color: white;
+    list-style: none;
+    border: 1px black;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 4px;
+}
+li>label{
+    font-size: 16px;
+}
+input[type="text"]{
+    border-radius: 3px;
+    padding: 8px;
+    border: 1px solid gray;
+}
+input[type="submit"]{
+    padding: 8px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+input[type="submit"]:active{
+    background-color: #b1a9a9;
+}
+*{
+    font-family: Arial;
+}

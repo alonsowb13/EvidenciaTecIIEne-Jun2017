@@ -1,0 +1,81 @@
+@font-face{
+  font-family: 'King';
+  src: url('../fonts/Kingsmen_D.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Assa';
+  src: url('../fonts/Assassin$.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Op';
+  src: url('../fonts/OptimusPrinceps.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+header{
+  text-align: center;
+  background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NBw0HDQ0HDQ8IDQ0NFREWFhURExMYHSggGBolJxUVITEhJSkrLi4uFx8zODM4NygtLisBCgoKDQ0NDw0PDzcZFRkrKystNzctLSstKysrKy0rKy0tLS0rKysrKysrKysrKystKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAACAwEABwb/xAAbEAEBAQEAAwEAAAAAAAAAAAABABECgcHiMf/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgUGA//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8A+eyxKmWJHEqSRSqkUhUkilVIpFqSWJUSKRamkUqJFItTSKVEikWppZUSKRamkUqJFItBIpUYpFqaWTSKRQSxJpFItCxJsWANjNikUUizYsUWxlZFGOTYxRbGTYxRslZB93liVEsSjnVJIpUSKRamkUqJFItTSKVEikWppFKiRSq1NIpUSKRamkUqJFItTSKVEikWppFqJFItBik0sYtBIpNixQYtRIsUGxkljCg2MmxjQNkmxIA2TikUWyVkUWzJWRX3+WJUSKUcypJFKqRSLUkglZIJFqaQSqkUi1JIpUSKRamkUqJFKrU0ilRIpFqaRSokUi1NIpUSKRamkUqJFItBIs0sYtTSxmkY1QSKTSxi1NLGaRYoNjJLItGLNjFFjNsYtC627Ir0NIpVSKUcqpJBKqRSLUkilVIJFqaQSqkUi1JIpUSKRakkUqpBItTSKVEikWppFKiRSrVTSLUSCRaCRSbYkWppFmliRamkWokWLQSKTSLGqDYybGLQSLNsig2MmKRRsk2RRSyVkV6MkUqpFKOTUkilRIpFqSRSqkEi1JIpVSCRamkEqpBItTSKVEgkWppFKiRSNVNIpUSCRamkUqJFItTSLUSKRamkUqJFjVTSLUYtVqaRaiRYtBizSLFoNjOKRqg2JJsYtBsyTYxQuy2yLXpSRSqkUo49SSCVUikWpJBKqQSLU0glVIJGqmkEqpBItTSKVEgkWppFKiRSNVJItRIpFqaRSaRYtTSLUSKRqpsUmliRamxajFjVTYs2LFoJFKjFKtUGLNixQbEmxYtBslZGhSOTsivTEilRItHFqSRSokUi1JIJVSDFqaQSqkEi1NIJVSDGqmkGoxSLU0glRIsaqaQSqwSLU0ilRIMaoJBqMUi1NIpUYJGqDFmkUi0EizYsaoMWbFq0DFm2MWgkWaRYoNjJsY0GXWt0WvTkilRINHDqaQaqQSNVNglRIpFqaQajFItSSKVEgxqppBqsEi1Nik2LGs1NizYsWppFJsWNVNi1GDGs0Eg1GLFqbFKjBjVBIs2KRqgxZsWLQbGSWNWgYs2LRQbGTY1aoWSbIr1Bi1EilHCqTFKjBi1NglRikaqaQSowSLU2LUYMaqaQajFItTYNRIsaqaQajBjWaDBqMGLmgxSaRY1U0i1GDGs0GLNixrNTbGTFjQMWbFig2MmLGqLFk2MaBsZNjVQsk2ZFr1FizYtHBqaQSoxYtTYNRgkaqaRZsWLU2CVGDGqmxajBi1Nik2LGqmxZsGNUGDUYsazU2DUYMazQYs2LGqDFmxY1mpsWbFigxZsWNZoMWbFjQNjJixqixZsWNYNkmyK9RYs2LHn6mxZsGLQYNRgxqpsGowYtBg1GDGqmxZsWNZqbBqMGNUGLNgxrNBg1GDGgYNRgxc0GLNgxrAYs2LGwYs2LGs0GLJsYuAxmxY0DFmxY0DYyYsawbpZHI09RYt10eeBh1ddGhYNt0VNi3XRrAYN10awGLddFwOo9XXRoGDddGsGLddGsBi3XRrAYt10awGLbdGsBi3XRoWLddGxYt10awbG66NA2N11VxX6928fnm66j6Y//2Q==');
+  color: #eceff1 ;
+  box-shadow: 0px 2px 5px #1c1a19;
+}
+h1{
+  font-family: 'Op';
+}
+h2{
+  font-family: 'King';
+  text-align: center;
+  border-color: rgba(177, 209, 227, 0.7);
+  box-shadow: 0px 2px 5px #1c1a19;
+
+}
+body{
+  background: url('http://wallup.net/wp-content/uploads/2016/01/168643-minimalism-green-geometry-abstract-low_poly-digital_art-artwork.png');
+}
+
+#per{
+  text-align: center;
+}
+
+#edu div{
+  display: inline-block;
+}
+#edu{
+  margin-left: 450px;
+}
+#des{
+  margin-left: 20px;
+}
+#edu2 div{
+  display: inline-block;
+}
+#edu2{
+  margin-left: 450px;
+}
+#edu3 div{
+  display: inline-block;
+}
+#edu3{
+  margin-left: 450px;
+}
+#pro div{
+  display: inline-block;
+}
+#pro{
+  margin-left: 450px;
+}
+#pro2 div{
+  display: inline-block;
+}
+#pro2{
+  margin-left: 450px;
+}
+
+p{
+  font-family: Arial;
+}

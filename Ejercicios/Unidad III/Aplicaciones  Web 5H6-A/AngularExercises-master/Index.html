@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library  manejar html mas simple-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript lo que usa el boot para manipular ciertas animaciones y elementos del html-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" ng-controller="BooksController as book">
+
+  <header>
+   <div class="row" id="Calvin"><!-- fila-->
+	<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12"><!-- col luego el tamanio ya sea movil, desktop, etc y el tamanio 12 que es el maximo -->
+	    <h1>Libros</h1>
+	    
+   </div>
+
+   <div class="row">
+   	<div class="col-md-4">
+   		<div class="form-group">
+	      <label for="titulo">Buscar:</label>
+	      <input id="titulo" cols="1" rows="1" ng-model="filter" class="form-control">
+        </div>
+        <div class="form-group pull-left">
+						<input type="submit" class="btn btn-primary" value="Buscar" />
+					</div>
+	</div>
+   	</div>
+   	<div class="col-md-4">
+   		<div class="form-group">
+   			<label for="Ordenar">Ordenar</label>
+   			<select name="" id="ordenamiento" ng-model="" class="form-control" placeholder="Titulo">
+   				        <option value="1">Titulo</option>
+						<option value="2">Editorial</option>
+   			</select>
+   		</div>
+   	</div>
+   	<div class="col-md-4"></div>
+   </div>
+   </header>
+
+
+	<ul class="list-group">
+		<li class="list-group-item" ng-repeat="product in book.products | orderBy:'titulo'">
+		  <div class="row">
+		   <div class="col-md-4">
+            <div class="text-left">
+            <img width="304" height="236" ng-src="{{product.img}}"/>
+            </div>
+           </div>
+           <div class="col-md-8">
+           	<h1>{{product.id}}.-  {{product.titulo}} </h1>
+           	<h2>{{product.autor}} {{product.editorial}}</h2>
+           	<p class="text-justified">{{product.descripcion}}</p>
+           </div>
+		  </div>
+		</li>
+	</ul>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/angular-ui-router.min.js"></script>
+</body>
+</html>

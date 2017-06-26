@@ -1,0 +1,40 @@
+h1.center{
+  text-align: center;
+  color: #004d40;
+  font-size: 5em;
+}
+
+ul.unordered{
+
+}
+
+#ordered{
+  display: inline-block;
+  text-align: justify;
+  color: white;
+
+}
+
+#unordered{
+  display: inline-block;
+  text-align: justify;
+  color: white;
+}
+
+section{
+  text-align: center;
+}
+
+#lol li, a{
+  display: inline-block;
+  word-spacing: 5px;
+
+}
+
+#list{
+  background-color: #004d40;
+}
+
+body{
+  background: url('http://www.planwallpaper.com/static/images/6806129-pretty-backgrounds.jpg');
+}

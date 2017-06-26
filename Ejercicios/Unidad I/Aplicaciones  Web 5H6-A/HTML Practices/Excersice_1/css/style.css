@@ -1,0 +1,28 @@
+
+
+
+
+
+#found{
+	color: #2196f3;
+
+}
+
+.background{
+	background-color: #F5F5F5;
+}
+
+hr.style007 { 
+  border-top: 1px dashed #8c8b8b; 
+} 
+hr.style007:after { 
+  content: '\002702'; 
+  display: inline-block; 
+  position: relative; 
+  top: -12px; 
+  left: 40px; 
+  padding: 0 3px; 
+  background: #f0f0f0; 
+  color: #8c8b8b; 
+  font-size: 18px; 
+}

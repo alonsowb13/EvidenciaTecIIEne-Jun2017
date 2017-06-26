@@ -1,0 +1,58 @@
+img{
+  width: 200px;
+  height: 225px;
+}
+
+body{
+  background: url('http://cummingscoffee.com/wp/assets/images/light-abstract.jpg');
+}
+
+header{
+  background: url('http://imgstocks.com/wp-content/uploads/2013/11/Red-abstract-background-photosinbox-com-1280x800.jpg');
+  text-align: center;
+  color: white;
+}
+
+h1{
+  margin-top: -10px;
+}
+
+section{
+  background: url('http://ilovehdwallpapers.com/walls/abstract-red-color-HD.jpg');
+  display: inline-block;
+  border-color: rgba(177, 209, 227, 0.7);
+  box-shadow: 0px 2px 5px #1c1a19;
+  width: 1330px;
+}
+
+article{
+  width: 476px;
+  display: inline-block;
+  margin-left: 130px;
+}
+
+#anou{
+  float: right;
+  margin-top: 50px;
+}
+
+
+
+footer{
+  text-align: center;
+}
+
+hr{
+  display: inline-block;
+  margin-left: 70px;
+  width: 2px;
+  height: 320px;
+  background-color: #448aff;
+}
+
+nav{
+  text-align: center;
+  word-spacing: 10px;
+  border-color: rgba(177, 209, 227, 0.7);
+  box-shadow: 0px 2px 5px #1c1a19;
+}

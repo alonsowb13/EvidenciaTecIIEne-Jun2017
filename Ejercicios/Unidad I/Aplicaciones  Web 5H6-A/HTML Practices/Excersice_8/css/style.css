@@ -1,0 +1,55 @@
+
+
+
+.columna {
+  width:50%;
+  float:right;
+}
+
+@media (max-width: 800px) {
+  
+  .columna {
+    width:200;
+    float:right;
+    border: 2;
+  }
+  
+}
+
+
+body{
+	background-color: #b39ddb;
+}
+
+table{
+	border-color: blue;
+	border-style: solid;
+	background-color: #7e57c2
+}
+#col1 {
+	
+font: oblique bold 120% cursive;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #b39ddb;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+}

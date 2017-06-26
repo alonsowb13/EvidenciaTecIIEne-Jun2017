@@ -1,0 +1,46 @@
+<ul class="nav nav-tabs">
+	<li ng-class="{active: panel.isSelected(1)}"><a href="" ng-click="panel.selectTab(1)">Description</a></li>
+	<li ng-class="{active: panel.isSelected(2)}"><a href="" ng-click="panel.selectTab(2)">Specifications</a></li>
+	<li ng-class="{active: panel.isSelected(3)}"><a   href="" ng-click="panel.selectTab(3)">Reviews</a></li>
+</ul>
+<div class="panel" ng-show="panel.isSelected(1)">
+		<h4>Description</h4>
+		<p>{{product.description}}</p>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(2)">
+		<h4>Specification</h4>
+		<blockquote>
+			None yet
+		</blockquote>
+	</div>
+	<div class="panel" ng-show="panel.isSelected(3)">
+		<h4>Reviwes</h4>
+		<form name="reviewForm" class="form-horizontal" ng-controller="ReviewController as rCtrl" ng-submit="reviewForm.$valid && rCtrl.addReview(product)" novalidate>
+		<blockquote ng-repeat="review in product.reviews">
+			<b>Stars: {{reviews.stars}}</b>
+			{{reviews.body}}
+			<cite>by: {{reviews.author}}</cite>
+		</blockquote>
+		<div class="form-group">
+		<label for="stars">Rate product:</label>
+		<select id="stars" ng-model="rCtrl.review.stars" class="form-control" requiered>
+			<option value="1">1 star</option>
+			<option value="2">2 stars</option>
+			<option value="3">3 stars</option>
+			<option value="4">4 stars</option>
+			<option value="5">5 stars</option>
+		</select>
+		</div>
+		<div class="form-group">
+			<label for="comments">Add your product comment</label>
+			<textarea ng-model="rCtrl.review.body" id="comments" cols="30" rows="10" class="form-control" requiered></textarea>
+		</div>
+		<div class="form-group">
+			<label for="email">Please add your email</label>
+			<input ng-model="rCtrl.review.author" type="email" placeholder="email@example.com" requiered>
+		</div>
+		<div class="form-group pull-right">
+			<input type="submit" value="Send Review" class="btn btn-primary">
+		</div>
+		</form>
+	</div>

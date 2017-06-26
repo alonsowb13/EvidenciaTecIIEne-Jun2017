@@ -1,0 +1,34 @@
+.News{
+	position: absolute;
+	border-right: 1px solid #3CA0ED;
+	left:30px;
+}   
+
+.ann{
+	position: absolute;
+	
+	right:15px;
+} 
+
+footer{
+     position: relative;
+	 text-align:center;
+	 top:150px;
+	 
+}
+
+img{
+	position: relative;
+	left:120px;
+	
+}
+
+section{
+	position: relative;
+	border: blue 3px solid;
+	
+	width:450px;
+	height:450px;
+	left:450px;
+	top:100px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arguments Object</title>
+  <link rel="stylesheet" href="../Definitions/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Arguments Object</h1>
+  </header>
+  <section>
+    <article>
+      <p>JavaScript functions have a built-in object called the arguments object.</p>
+      <p>The argument object contains an array of the arguments used when the function was called (invoked).</p>
+      <p>This way you can simply use a function to find (for instance) the highest value in a list of numbers.</p>
+      <h3>Example:</h3>
+      <p>x = findMax(1, 123, 500, 115, 44, 88);
+        <br>
+        function findMax() {<br>
+        var i;<br>
+        var max = -Infinity;<br>
+        for (i = 0; i < arguments.length; i++) {<br>
+        if (arguments[i] > max) {<br>
+            max = arguments[i];<br>
+        } <br>
+      } <br>
+        return max;<br>
+        } </p>
+      </ul>
+    </article>
+  </section>
+</body>
+</html>

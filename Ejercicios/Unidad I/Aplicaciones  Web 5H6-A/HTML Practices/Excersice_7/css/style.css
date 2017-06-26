@@ -1,0 +1,11 @@
+body{
+	background-color: #1de9b6;
+}
+
+table{
+	background: fixed;
+}
+th{
+	border-color: #03a9f4;
+	border-width: 20px;
+}

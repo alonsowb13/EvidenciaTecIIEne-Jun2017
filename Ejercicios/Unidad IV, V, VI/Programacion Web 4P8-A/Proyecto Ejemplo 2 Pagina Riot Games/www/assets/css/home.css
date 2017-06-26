@@ -1,0 +1,10 @@
+
+header img{
+    width: 100%;
+}
+.jumbotron{
+    margin-top: 50px;
+    background: url("../img/header_logo.jpg") center;
+    background-size: cover;
+    color: white;
+}

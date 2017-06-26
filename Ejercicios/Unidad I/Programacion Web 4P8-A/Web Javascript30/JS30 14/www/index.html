@@ -1,0 +1,180 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS30 14</title>
+    
+</head>
+<body>
+  
+  
+    <script>
+        let age = 103;
+       let age2 = age;
+       console.log(age,age2);
+       age = 200;
+       console.log(age,age2);
+        
+        let name = 'Wes';
+        let name2 = name;
+        console.log(name,name2);
+        name = 'Wesley';
+        console.log(name,name2);
+        
+        const players = ['Wes','Sarah','Ryan','Poppy'];
+        
+        const team = players;
+        
+        console.log(players,team);
+        
+        team[3]='Lux';
+        
+        console.log('Metodo equals',players,team);
+        
+        const team2 = players.slice();
+        team2[3]='Test';
+        
+        console.log('Metodo slice()',players,team2);
+        
+        /* Method concat array*/
+        const team3 = [].concat(players);
+        team3[3]='Concat';
+        console.log('Metodo concat()',players,team3);
+        
+        /* Method ES6*/
+        const team4 = [...players];
+        team4[3]='ES6';
+        console.log('Metodo ES6',players,team4);
+        
+        /* Method from()*/
+        const team5 = Array.from(players);
+        team5[3]='from()';
+        console.log('Metodo from()',players,team5);
+        
+        const person = {
+            name:'Wes Box',
+            age:80
+        };
+        
+        const captain = person;
+/*
+        captain.number = 99;
+*/
+        console.log(captain);
+        const cap2 = Object.assign({},person,{number:99,age:12});
+        console.log(cap2);
+        
+        /*const cap3 = {...person};
+        console.log(cap3);*/
+        
+        const wes = {
+            name:'Wes',
+            age:100,
+            social:{
+                twiter:'@wesbox',
+                facebook:'wesbos.developer'
+            }
+        }
+        console.log('wes',wes);
+        
+        const dev = Object.assign({},wes);
+        console.log('dev',dev);
+        
+        const dev2 = JSON.parse(JSON.stringify(wes));
+        dev2.name='dev2';
+        console.log('wes',wes);
+        console.log('dev2',dev2);
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS30 14</title>
+    
+</head>
+<body>
+  
+  
+    <script>
+        let age = 103;
+       let age2 = age;
+       console.log(age,age2);
+       age = 200;
+       console.log(age,age2);
+        
+        let name = 'Wes';
+        let name2 = name;
+        console.log(name,name2);
+        name = 'Wesley';
+        console.log(name,name2);
+        
+        const players = ['Wes','Sarah','Ryan','Poppy'];
+        
+        const team = players;
+        
+        console.log(players,team);
+        
+        team[3]='Lux';
+        
+        console.log('Metodo equals',players,team);
+        
+        const team2 = players.slice();
+        team2[3]='Test';
+        
+        console.log('Metodo slice()',players,team2);
+        
+        /* Method concat array*/
+        const team3 = [].concat(players);
+        team3[3]='Concat';
+        console.log('Metodo concat()',players,team3);
+        
+        /* Method ES6*/
+        const team4 = [...players];
+        team4[3]='ES6';
+        console.log('Metodo ES6',players,team4);
+        
+        /* Method from()*/
+        const team5 = Array.from(players);
+        team5[3]='from()';
+        console.log('Metodo from()',players,team5);
+        
+        const person = {
+            name:'Wes Box',
+            age:80
+        };
+        
+        const captain = person;
+/*
+        captain.number = 99;
+*/
+        console.log(captain);
+        const cap2 = Object.assign({},person,{number:99,age:12});
+        console.log(cap2);
+        
+        /*const cap3 = {...person};
+        console.log(cap3);*/
+        
+        const wes = {
+            name:'Wes',
+            age:100,
+            social:{
+                twiter:'@wesbox',
+                facebook:'wesbos.developer'
+            }
+        }
+        console.log('wes',wes);
+        
+        const dev = Object.assign({},wes);
+        console.log('dev',dev);
+        
+        const dev2 = JSON.parse(JSON.stringify(wes));
+        dev2.name='dev2';
+        console.log('wes',wes);
+        console.log('dev2',dev2);
+    </script>
+</body>
+>>>>>>> e37c3d33ff3f6a6dff200d54fa43c169401c664a
+</html>

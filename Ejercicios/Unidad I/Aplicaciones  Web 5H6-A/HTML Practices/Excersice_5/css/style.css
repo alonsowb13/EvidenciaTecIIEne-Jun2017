@@ -1,0 +1,120 @@
+
+
+nav.navbar ul.nav li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ 
+
+nav.navbar {
+    background-color: #CC1414;
+}
+
+
+
+
+#fontnav{
+	background-color: #64b5f6 ;
+}
+
+
+.fontbody{
+	background-color: #bbdefb;
+}
+
+
+.left {
+    position: absolute;
+    left : 0px;
+    width: 450px;
+    border: 3px solid blue;
+    padding: 10px;
+
+}
+
+
+.right {
+    position: absolute;
+    right : 0px;
+    width: 250px;
+    border: 3px solid blue;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.ptra {
+     font-size: 12px;
+     color: black;
+     transition:font-size 12s;
+     -moz-transition:font-size 12s; /* Firefox 4 */
+     -webkit-transition:font-size 12s; /* Safari and Chrome */
+     -o-transition:font-size 12s;
+     transition:color 12s;
+     -moz-transition:color 12s; /* Firefox 4 */
+     -webkit-transition:color 12s; /* Safari and Chrome */
+     -o-transition:color 12s;
+}
+
+ .ppp:hover {
+      font-size: 40px;
+      color:#0d47a1;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "lesshat";
+
+.container{   
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top:20px;
+}
+
+.div-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    &.hidden{
+      overflow:hidden;
+    }
+    .img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 400px;           
+        margin-top: 0px;
+        -webkit-transition: margin 1s ease;
+        -moz-transition: margin 1s ease;
+        -o-transition: margin 1s ease;
+        -ms-transition: margin 1s ease;
+        transition: margin 1s ease;   
+    }      
+    &:hover{
+        .img{
+
+	margin-top: -200px;   
+        }
+     } 
+}

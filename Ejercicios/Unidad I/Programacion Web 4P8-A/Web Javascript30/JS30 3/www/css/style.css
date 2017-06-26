@@ -1,0 +1,60 @@
+<<<<<<< HEAD
+ *{
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+:root{
+    --base:#0ab9d0;
+    --spacing:10px;
+    --blur:5px;
+}
+span{
+    color: white;
+    font-size: 18px;
+}
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+h1{
+    color: var(--base);
+}
+.container{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+=======
+ *{
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+:root{
+    --base:#0ab9d0;
+    --spacing:10px;
+    --blur:5px;
+}
+span{
+    color: white;
+    font-size: 18px;
+}
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+h1{
+    color: var(--base);
+}
+.container{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+>>>>>>> e37c3d33ff3f6a6dff200d54fa43c169401c664a
+}

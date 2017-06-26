@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deviant Art Stripe Follow</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .list li > img{
+            width: 200px;
+            background-color: darkcyan;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .list li{
+            display: inline-block;
+        }
+        .trigger-enter {
+            display: block;
+        }
+        .trigger-enter-active {
+            opacity: 1;
+        }
+        .arrow {
+            position: absolute;
+            width:20px;
+            height:20px;
+            display: block;
+            background:white;
+            transform: translateY(-50%) rotate(45deg);
+        }
+        .dropdownBackground {
+            width:100px;
+            height:100px;
+            position: absolute;
+            background-color: darkcyan;
+            border: 1px solid white;
+            border-radius: 4px;
+            box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+            transition:all 0.3s, opacity 0.1s, translate 0.2s;
+            transform-origin: 50% 0;
+            display: flex;
+            justify-content: center;
+            opacity:0;
+        }
+        .full_img img{
+            width: 80%;
+            position: absolute;
+            opacity: 0;
+            left: 0;
+            border-radius: 4px;
+            margin-left: 20px;
+            padding-top: 30px;
+        }
+        .open .full_img img{
+            opacity: 1;
+        }
+        .trigger-enter .full_img img{
+            display: block;
+        }
+        .trigger-enter-active .full_img img{
+            opacity: 1;
+        }
+        .dropdownBackground.open {
+            opacity: 1;
+        }
+        .img_active{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+   
+   <div class="dropdownBackground">
+       <div class="arrow"></div>
+   </div>
+   
+    <ul class="list">
+        <li>
+            <img src="public/img/img1.jpg" alt="">
+            <div class="full_img">
+                <img src="public/img/img1.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <img src="public/img/img2.jpg" alt="">
+            <div class="full_img">
+                <img src="public/img/img2.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <img src="public/img/img3.jpg" alt="">
+            <div class="full_img">
+                <img src="public/img/img3.jpg" alt="">
+            </div>
+        </li>
+    </ul>
+    
+    <script>
+        const images = document.querySelectorAll('.list li > img');
+        const background = document.querySelector('.dropdownBackground');
+        
+        function displayImage() {
+            this.classList.add('trigger-enter');
+            setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150);
+            background.classList.add('open');
+            const dropdown = this.nextElementSibling.firstElementChild;
+            const dropdownCoords = dropdown.getBoundingClientRect();
+            dropdown.style.opacity=1;
+            const coords = {
+              height: dropdownCoords.height,
+              width: dropdownCoords.width,
+              top: dropdownCoords.top + window.scrollY,
+              left:window.scrollX
+            };
+            background.style.setProperty('width', `${.80*window.innerWidth}px`);
+            background.style.setProperty('height', `${.80*window.innerHeight}px`);
+            background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px)`);
+          }
+         function handleLeave() {
+            this.classList.remove('trigger-enter', 'trigger-enter-active');
+            background.classList.remove('open');
+            const dropdown = this.nextElementSibling.firstElementChild;
+             dropdown.style.opacity=0;
+          }
+          images.forEach(image=>image.addEventListener('mouseover',displayImage));
+          images.forEach(image=>image.addEventListener('mouseleave',handleLeave));
+    </script>
+</body>
+</html>

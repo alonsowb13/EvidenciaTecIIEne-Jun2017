@@ -1,0 +1,70 @@
+<<<<<<< HEAD
+* {
+    font-family: helvetica;
+}
+
+input.search{
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0;
+}
+.suggestions{
+    padding: 0; 
+}
+.suggestions li{
+    margin: 0;
+    background-color: white;
+    list-style: none;
+    padding: 15px 4px;
+    border-radius: 3px;
+    border: 1px solid black;
+    text-transform: capitalize;
+}
+.suggestions li:nth-child(even){
+    background-color: azure;
+}
+.suggestions li:nth-child(odd){
+    
+}
+.population{
+    font-size: 14px;
+    float: right;
+}
+.match{
+    background: yellow;
+=======
+* {
+    font-family: helvetica;
+}
+
+input.search{
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0;
+}
+.suggestions{
+    padding: 0; 
+}
+.suggestions li{
+    margin: 0;
+    background-color: white;
+    list-style: none;
+    padding: 15px 4px;
+    border-radius: 3px;
+    border: 1px solid black;
+    text-transform: capitalize;
+}
+.suggestions li:nth-child(even){
+    background-color: azure;
+}
+.suggestions li:nth-child(odd){
+    
+}
+.population{
+    font-size: 14px;
+    float: right;
+}
+.match{
+    background: yellow;
+>>>>>>> e37c3d33ff3f6a6dff200d54fa43c169401c664a
+}

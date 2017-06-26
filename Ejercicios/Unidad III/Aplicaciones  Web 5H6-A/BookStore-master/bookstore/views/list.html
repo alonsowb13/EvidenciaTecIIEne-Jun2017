@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="intro-text">
+         <div class="col-sm-2"> <b>Buscar </b> </div> 
+         <div class="col-sm-4">Titulo: <input type="text" ng-model="filtro" /></div>
+         <div class="col-sm-1"><b>Ordenar:</b> </div>
+         <div class="col-sm-3">  
+          <select class="form-control" ng-model="ordenar" >
+            <option value="titulo" selected>Titulo</option>
+            <option value="editorial">Editorial</option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="intro-text">
+     
+    </div>
+</div>
+</div>
+<section id="libros">
+    <div class="container" >
+        <div class="row" ng-repeat="libro in libros | filter:{titulo:filtro} | orderBy:ordenar" ng-hide = "libro.descontinuado" >
+            <div class="col-sm-2">
+                <img ng-src="{{ libro.img }}" class="img-responsive" alt="{{ libro.titulo }}">
+            </div>
+            <div class="col-sm-10">
+            <b><a href="#/book/{{ libro.id }}">{{ libro.titulo }}</a></b>
+                <p></p>
+                <p><b>{{ libro.editorial }}</b></p>
+                <p>{{ libro.descripcion }} </p>
+                <button ng-show="libro.disponible">Comprar</button>
+            </div>           
+        </div>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.text-red{
+    color: #c0392b;
+}
+.text-green{
+    color: #27ae60;
+}
+.text-yellow{
+    color: #f39c12;
+}
+.image-rounded{
+    border-radius: 20%;
+    transform: scale(.96);
+    transition: ease all .1s;
+}
+.image-rounded:hover{
+    transform: scale(1);
+}
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Latest compiled and minified CSS -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	
+</head>
+<body ng-app="store">
+ <!--<div class="panel panel-default" ng-hide="store.product.soldOut">
+	 <div class="container" ng-controller="StoreController as store">
+	     <h1>Product Name: {{store.product.name}}</h1>
+	     <h2>Product Price: ${{store.product.price}}</h2>
+	     <p>Description: {{store.product.description}}</p>
+	     <button class="btn btn-primary" ng-show="!store.product.canPurchase">Add to Cart</button>
+	     <div class="alert alert-danger" ng-show="!store.produc.canPurchase">Este producto no se encuentra disponible</div>
+	 </div>
+	 </div>-->
+	 
+	<!-- <div class="container">
+	     <div ng-controller="StoreController as store">
+	        <div class="row" ng-repeat="product in store.products">
+                 <div class="imagen"><img src="public/img/{{product.name}}.png" alt="{{product.name}}" height="150" width="150"></div>
+	             <h1>{{product.name}} {{product.price | currency: "USD $"}}</h1>
+	             <h2>Product Price: {{product.price | currency:"USD$"}}</h2>
+	             <p>Description: {{product.description}}</p>
+	             <button class="btn btn-primary" ng-show="!product.canPurchase">Add to Cart</button>
+	             <div class="alert alert-danger" ng-show="!produc.canPurchase">Este producto no se encuentra disponible</div>
+	        </div>
+	     </div>
+	 </div>-->
+	 
+	 <div class="container">
+	     <ul class="list-group" ng-controller="StoreController as store">
+	         <li class="list-group-item" ng-repeat="product in store.products">
+	             <h3>{{product.name}} <em class="pull-right">{{product.price | currency: "USD $"}}</em></h3>
+	             <div class="text-center" >
+	                 <img ng-src="{{product.images[0].full}}" alt="{{product.images[0].full}}" height="150" width="150">
+	             </div>
+	             <p>{{product.description}}</p>
+	             
+	         </li>
+	     </ul>
+	 </div>
+		<!-- Angular JS-->
+	<script src="lib/angular-ui-router.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

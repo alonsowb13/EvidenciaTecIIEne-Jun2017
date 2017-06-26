@@ -1,0 +1,64 @@
+
+
+
+#back{
+	background-color: #c8e6c9;
+}
+
+.color{
+	background-color: #7cb342;
+
+
+}
+.leftsection {
+  float:left;width:40%;border:2px solid
+}
+#space{
+	float:left;width:160px;height:110px;
+	break-inside:avoid-page;
+}
+
+#lefthor{
+	background-color: #00c853;
+}
+
+nav a{
+	font-size: 1.3em;
+	color: #004d40;
+	padding-bottom: 3px;
+	text-decoration: none;
+	 text-shadow: 2px 2px 5px green
+}
+
+#pa {
+  font-family: sans-serif;
+  font-size: 100%;
+  font-style: italic;
+}
+
+
+#lalaimg {
+	text-align: right;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 400px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+section{
+
+background-color: #00c853;
+
+}
+
+
+
+#backright{
+	background-color: #2e7d32;
+}
+
+
+

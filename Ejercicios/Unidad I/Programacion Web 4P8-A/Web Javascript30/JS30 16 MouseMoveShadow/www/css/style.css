@@ -1,0 +1,11 @@
+body{
+    margin: 0 auto;
+    background: black;
+}
+.hero{
+    color: white;
+    margin: 200px auto;
+    height: 300px;
+    align-content: center;
+    text-align: center;
+}

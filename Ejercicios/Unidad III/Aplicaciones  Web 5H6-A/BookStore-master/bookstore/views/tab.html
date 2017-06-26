@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="intro-text">
+         <a href="#/home">< volver </a>
+        </select>
+    </div>
+</div>
+</div>
+<section id="libros">
+    <div class="container" >
+        <div class="row" ng-repeat="libro in libros | filter:{id:bookid}">
+            <div class="col-sm-2">
+                <img ng-src="{{ libro.img }}" class="img-responsive" alt="{{ libro.titulo }}">
+            </div>
+            <div class="col-sm-10">
+            <b><a href="#/book/{{ libro.id }}">{{ libro.titulo }}</a></b>
+                <p></p>
+                <p><b>{{ libro.editorial }}</b></p>
+                <p>{{ libro.descripcion }} </p>
+            </div>           
+        </div>
+    </div>
+</section>

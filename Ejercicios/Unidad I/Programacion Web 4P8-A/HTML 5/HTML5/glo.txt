@@ -1,0 +1,57 @@
+a= ancla, links dentro de la o a otras paginas
+nav-- horizontal
+
+<div id="principal">
+<h1>Blog</h1>
+ </div>
+
+seccion adentro de article
+
+
+<article>
+	<h1>blog</h1>
+	<img src="">
+	<p>lolo</p>
+</article>
+
+article>p{
+		color:white;
+		background-color: black
+		}
+
+section-- separacion 
+articule va dentro de section, section es el padre
+
+aside-- informacion con forme a lo principal, es secundario
+
+canvas--- espacio para dibujar
+
+ctx.beginPath();-- inicio al elemento
+
+canvas-- se pueden hacer juegos, dibujos
+
+<script >
+	var canvas=document.getElementById("micanvas");
+	var ctx = canvas.getContext("2d");
+	var grd= ctx.createLinearGradient(0,0,200,0);//color inicial a otro color (punto del gradiente,punto del gradiente,punto donde acava,punto donde acaba)(x1,y1,x2,y2)
+	grd.addColorStop(0,"red");  //0 en hexa es negroo, inicia en 0 y termina en rojo, empieza en la linea 0
+	grd.addColorStop(1,"white");// final o 100 de la figura que se genera
+	ctx.fillStyle=grd;// rellenarlo con grd
+	ctx.fillRect(10,10,150,80);// rellena un triangulo con esas medidas
+</script>
+
+controls-- maneja  todo los botones del audio.
+
+<audio controls="controls">
+	<source src="public/sounds/bottom.m4a" type="audio/m4a">
+</audio>
+<audio controls="controls" autoplay="autoplay" loop="loop">
+	<source src="public/sounds/Dyro x Goja - Alive.mp3" type="audio/mp3">
+</audio>
+
+loop-- repetir el audio
+autoplay--- se reprodusca cuando entra a la pagina.
+<input list="canalesdelasestrellas"></input>--- entrada de exto.
+
+
+motor de chrome,safari-- web kit

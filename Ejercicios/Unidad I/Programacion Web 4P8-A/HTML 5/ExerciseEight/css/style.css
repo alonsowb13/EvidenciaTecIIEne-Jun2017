@@ -1,0 +1,63 @@
+@font-face{
+  font-family: 'King';
+  src: url('../fonts/Kingsmen_D.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Assa';
+  src: url('../fonts/Assassin$.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: 'Op';
+  src: url('../fonts/OptimusPrinceps.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+section{
+  width: 700px;
+  height: 400px;
+  display: inline-block;
+  margin-left: 350px;
+  margin-top: 100px;
+}
+
+article{
+  width: 500px;
+  height: 400px;
+  display: inline-block;
+  background: #37474f ;
+  box-shadow: 0px 2px 5px #1c1a19;
+  /*background: url('http://il2.picdn.net/shutterstock/videos/15904405/thumb/4.jpg');*/
+}
+
+aside{
+  width: 180px;
+  height: 400px;
+  display: inline-block;
+  float: right;
+
+  box-shadow: 0px 2px 5px #1c1a19;
+  background: #1a237e;
+}
+
+nav{
+  margin-top: 100px;
+}
+a{
+  color: white;
+}
+
+h2{
+  font-family: 'Op';
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+body{
+  background: url('http://www.designals.net/wp-content/uploads/2012/12/texturas-metal-25.jpg');
+}
